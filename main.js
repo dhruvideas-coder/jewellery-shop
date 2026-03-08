@@ -1,8 +1,8 @@
 // ============================================================
-// Abhushan Jewellers – main.js
+// Jewellers – main.js
 // ============================================================
 
-const WA_NUMBER = '919999999999'; // Replace with actual WhatsApp number
+const WA_NUMBER = '919510036176'; // Replace with actual WhatsApp number
 const WA_MSG = encodeURIComponent('Hello Abhushan Jewellers, I want to know more about your jewelry collection.');
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${WA_MSG}`;
 
@@ -121,4 +121,4 @@ if ('loading' in HTMLImageElement.prototype) {
   lazyImgs.forEach(img => imgObserver.observe(img));
 }
 
-console.log('%c✨ Abhushan Jewellers ✨', 'color:#C9A227;font-size:18px;font-weight:bold;');
+console.log('%c✨ Jewellers ✨', 'color:#C9A227;font-size:18px;font-weight:bold;');
