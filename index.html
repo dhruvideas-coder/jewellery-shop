@@ -1,16 +1,274 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
+  <!-- ── Charset & Viewport ── -->
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Abhushan Jewellers – Luxury Gold, Diamond, Bridal & Traditional Indian Jewelry in Malad, Mumbai. Timeless elegance, crafted to shine."/>
-  <meta name="keywords" content="gold jewelry, diamond jewelry, bridal jewelry, Indian jewelry, bangles, necklace, rings, Malad, Mumbai"/>
-  <meta property="og:title" content="Abhushan Jewellers – Timeless Elegance"/>
-  <meta property="og:description" content="Explore our exquisite collection of gold, diamond, and bridal jewelry. Visit us in Malad, Mumbai."/>
-  <meta property="og:image" content="images/hero_banner.png"/>
-  <meta property="og:type" content="website"/>
-  <title>Abhushan Jewellers – Timeless Elegance. Crafted to Shine.</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+
+  <!-- ── Security ── -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src https://fonts.gstatic.com;
+    img-src 'self' data: https://images.unsplash.com https://*.googleusercontent.com https://*.google.com;
+    frame-src https://maps.google.com https://www.google.com;
+    connect-src 'self';
+    base-uri 'self';
+    form-action 'self';
+    object-src 'none';
+  "/>
+  <meta name="referrer" content="strict-origin-when-cross-origin"/>
+
+  <!-- ── Primary SEO ── -->
+  <title>Mahalaxmi Jewellers – Timeless Elegance. Crafted to Shine.</title>
+  <meta name="description" content="Mahalaxmi Jewellers – Luxury Gold, Diamond, Bridal & Traditional Indian Jewelry in Malad, Mumbai. BIS Hallmarked Gold. GIA Certified Diamonds. Timeless elegance, crafted to shine."/>
+  <meta name="keywords" content="gold jewelry, diamond jewelry, bridal jewelry, Indian jewelry, bangles, necklace, rings, Malad, Mumbai, Mahalaxmi Jewellers, BIS hallmarked gold, kundan jewelry, wedding jewelry Mumbai"/>
+  <meta name="author" content="Mahalaxmi Jewellers"/>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"/>
+  <link rel="canonical" href="https://www.mahalaxmijewellers.com/"/>
+
+  <!-- ── Open Graph / Facebook ── -->
+  <meta property="og:type"        content="website"/>
+  <meta property="og:site_name"   content="Mahalaxmi Jewellers"/>
+  <meta property="og:locale"      content="en_IN"/>
+  <meta property="og:url"         content="https://www.mahalaxmijewellers.com/"/>
+  <meta property="og:title"       content="Mahalaxmi Jewellers – Timeless Elegance"/>
+  <meta property="og:description" content="Explore our exquisite collection of gold, diamond, and bridal jewelry. Visit us in Malad, Mumbai. BIS Hallmarked · GIA Certified Diamonds."/>
+  <meta property="og:image"       content="https://www.mahalaxmijewellers.com/images/hero_banner.png"/>
+  <meta property="og:image:alt"   content="Mahalaxmi Jewellers – Luxury Gold & Diamond Jewelry"/>
+  <meta property="og:image:width"  content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card"        content="summary_large_image"/>
+  <meta name="twitter:title"       content="Mahalaxmi Jewellers – Timeless Elegance"/>
+  <meta name="twitter:description" content="Luxury Gold, Diamond & Bridal Jewelry in Malad, Mumbai. BIS Hallmarked Gold · GIA Certified Diamonds."/>
+  <meta name="twitter:image"       content="https://www.mahalaxmijewellers.com/images/hero_banner.png"/>
+  <meta name="twitter:image:alt"   content="Mahalaxmi Jewellers – Gold & Diamond Jewelry"/>
+
+  <!-- ── Mobile / PWA ── -->
+  <meta name="theme-color"                    content="#C9A227"/>
+  <meta name="msapplication-TileColor"        content="#C9A227"/>
+  <meta name="apple-mobile-web-app-capable"   content="yes"/>
+  <meta name="apple-mobile-web-app-title"     content="Mahalaxmi Jewellers"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+  <meta name="format-detection"               content="telephone=yes"/>
+  <meta name="mobile-web-app-capable"         content="yes"/>
+
+  <!-- ── Local / Geo SEO ── -->
+  <meta name="geo.region"    content="IN-MH"/>
+  <meta name="geo.placename" content="Mumbai, Maharashtra, India"/>
+  <meta name="geo.position"  content="19.1864;72.8443"/>
+  <meta name="ICBM"          content="19.1864, 72.8443"/>
+
+  <!-- ── JSON-LD 1: JewelryStore (Local Business) ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "JewelryStore",
+    "name": "Mahalaxmi Jewellers",
+    "alternateName": "Mahalaxmi Jewelers",
+    "description": "Luxury Gold, Diamond, Bridal and Traditional Indian Jewelry in Malad West, Mumbai. BIS Hallmarked Gold and GIA/IGI Certified Diamonds. Serving families since 1995.",
+    "foundingDate": "1995",
+    "url": "https://www.mahalaxmijewellers.com",
+    "telephone": "+91-95100-36176",
+    "email": "info@mahalaxmijewellers.com",
+    "priceRange": "₹₹₹",
+    "currenciesAccepted": "INR",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, UPI, Net Banking",
+    "image": [
+      "https://www.mahalaxmijewellers.com/images/hero_banner.png",
+      "https://www.mahalaxmijewellers.com/images/bridal_collection.png",
+      "https://www.mahalaxmijewellers.com/images/diamond_ring.png"
+    ],
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.mahalaxmijewellers.com/images/hero_banner.png",
+      "width": 600,
+      "height": 60
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Malad West",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "postalCode": "400064",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude":  19.1864,
+      "longitude": 72.8443
+    },
+    "hasMap": "https://share.google/2djDuenlVVsBcjqH2",
+    "areaServed": {
+      "@type": "City",
+      "name": "Mumbai"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "320",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "10:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "11:00",
+        "closes": "20:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/mahalaxmijewellers",
+      "https://www.instagram.com/mahalaxmijewellers"
+    ]
+  }
+  </script>
+
+  <!-- ── JSON-LD 2: FAQ Page ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of jewelry does Mahalaxmi Jewellers offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mahalaxmi Jewellers offers gold jewelry (22K & 18K), diamond jewelry, bridal sets, bangles, necklaces, earrings, rings, and silver jewelry. All gold is BIS hallmarked and diamonds are GIA/IGI certified."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is Mahalaxmi Jewellers located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mahalaxmi Jewellers is located in Malad West, Mumbai, Maharashtra – 400064, India. View on Google Maps: https://share.google/2djDuenlVVsBcjqH2"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the store timings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The store is open Monday to Saturday: 10:00 AM – 9:00 PM, and Sunday: 11:00 AM – 8:00 PM."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the gold at Mahalaxmi Jewellers BIS hallmarked?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All gold jewelry at Mahalaxmi Jewellers is BIS (Bureau of Indian Standards) hallmarked, guaranteeing authenticity and purity of the metal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Mahalaxmi Jewellers offer bridal jewelry sets?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we offer complete bridal jewelry sets including Kundan, Polki, and diamond collections. Contact us on WhatsApp at +91 95100 36176 or visit our showroom in Malad, Mumbai."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I contact Mahalaxmi Jewellers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can call us at +91 95100 36176, email info@mahalaxmijewellers.com, or chat on WhatsApp. We are open 7 days a week."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ── JSON-LD 3: Breadcrumb ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.mahalaxmijewellers.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Collections",
+        "item": "https://www.mahalaxmijewellers.com/#collections"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Gallery",
+        "item": "https://www.mahalaxmijewellers.com/#gallery"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Contact",
+        "item": "https://www.mahalaxmijewellers.com/#contact"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ── JSON-LD 4: WebSite (Sitelinks Search Box eligible) ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Mahalaxmi Jewellers",
+    "url": "https://www.mahalaxmijewellers.com",
+    "description": "Luxury Gold, Diamond & Bridal Jewelry in Malad, Mumbai",
+    "inLanguage": "en-IN",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Mahalaxmi Jewellers",
+      "url": "https://www.mahalaxmijewellers.com"
+    }
+  }
+  </script>
+
+  <!-- ── Additional SEO Meta ── -->
+  <meta name="rating"            content="general"/>
+  <meta name="application-name" content="Mahalaxmi Jewellers"/>
+  <meta name="category"         content="Jewelry Store"/>
+  <meta name="coverage"         content="Mumbai, Maharashtra, India"/>
+  <meta name="revisit-after"    content="7 days"/>
+  <meta name="language"         content="English"/>
+  <meta property="og:image:secure_url" content="https://www.mahalaxmijewellers.com/images/hero_banner.png"/>
+  <meta property="og:updated_time"     content="2025-01-01T10:00:00+05:30"/>
+
+  <!-- ── Hreflang ── -->
+  <link rel="alternate" hreflang="en-in" href="https://www.mahalaxmijewellers.com/"/>
+  <link rel="alternate" hreflang="x-default" href="https://www.mahalaxmijewellers.com/"/>
+
+  <!-- ── Styles & Fonts ── -->
   <link rel="stylesheet" href="style.css"/>
+  <!-- hero is now a canvas animation, no image preload needed -->
+  <link rel="dns-prefetch" href="//images.unsplash.com"/>
+  <link rel="dns-prefetch" href="//maps.google.com"/>
+  <link rel="dns-prefetch" href="//cdn.tailwindcss.com"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <!-- ── Tailwind CDN — CDN loads first, then config is applied ── -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,6 +280,8 @@
             'gold-dark': '#9B7B18',
             champagne: '#F5E6BA',
             cream: '#FAF7F0',
+            ivory: '#FFFBF3',
+            parchment: '#F5EDE0',
           },
           fontFamily: {
             serif: ['Cormorant Garamond', 'Georgia', 'serif'],
@@ -29,13 +289,13 @@
           },
         }
       }
-    }
+    };
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 </head>
-<body class="bg-white font-sans">
+<body class="bg-ivory font-sans">
+
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
 
 <!-- Floating WhatsApp -->
 <div id="wa-float" title="Chat on WhatsApp" aria-label="WhatsApp Chat">
@@ -45,7 +305,7 @@
 </div>
 
 <!-- Lightbox -->
-<div id="lightbox" class="hidden fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4">
+<div id="lightbox" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4" style="background:rgba(26,10,0,0.92)">
   <button id="lightbox-close" class="absolute top-6 right-6 text-white text-4xl leading-none hover:text-gold transition-colors">&times;</button>
   <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[90vh] object-contain shadow-2xl"/>
 </div>
@@ -53,11 +313,11 @@
 <!-- ╔══════════════════════════════╗ -->
 <!-- ║          NAVBAR              ║ -->
 <!-- ╚══════════════════════════════╝ -->
-<header id="navbar" class="fixed top-0 left-0 right-0 z-40 py-5 px-6 md:px-12 flex items-center justify-between transition-all">
+<header id="navbar" class="fixed top-0 left-0 right-0 z-40 py-5 px-5 md:px-12 flex items-center justify-between transition-all">
   <!-- Logo -->
   <a href="#home" class="flex flex-col leading-none">
-    <span class="font-serif text-gold text-2xl md:text-3xl font-semibold tracking-wide">Abhushan</span>
-    <span class="font-sans text-white text-xs tracking-[0.35em] uppercase font-light" style="margin-top:-2px">Jewellers</span>
+    <span class="font-serif text-gold text-2xl md:text-3xl font-semibold tracking-wide">Mahalaxmi</span>
+    <span class="logo-sub font-sans text-white text-xs tracking-[0.35em] uppercase font-light" style="margin-top:-2px">Jewellers</span>
   </a>
 
   <!-- Desktop Nav -->
@@ -80,7 +340,8 @@
 </header>
 
 <!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden fixed top-0 left-0 right-0 bottom-0 z-30 flex flex-col items-center justify-center gap-8 bg-black bg-opacity-98">
+<div id="mobile-menu" class="hidden fixed top-0 left-0 right-0 bottom-0 z-30 flex flex-col items-center justify-center gap-7">
+  <button id="mobile-menu-close" aria-label="Close menu">&times;</button>
   <a href="#home"        class="nav-link text-2xl font-serif">Home</a>
   <a href="#about"       class="nav-link text-2xl font-serif">About</a>
   <a href="#collections" class="nav-link text-2xl font-serif">Collections</a>
@@ -94,20 +355,30 @@
 <!-- ║           HERO               ║ -->
 <!-- ╚══════════════════════════════╝ -->
 <section id="home" class="relative min-h-screen flex items-center" style="min-height:100svh">
-  <img class="hero-img" src="images/hero_banner.png" alt="Luxury gold jewelry – Abhushan Jewellers" loading="eager"/>
+  <img class="hero-img" src="images/hero_banner.png" alt="Luxury gold and diamond jewelry collection – Mahalaxmi Jewellers Malad Mumbai" loading="eager" fetchpriority="high"/>
   <div class="hero-overlay"></div>
+
+  <!-- Sparkle particles -->
+  <div class="hero-sparkle" style="left:12%;top:28%;--dur:3.5s;--delay:0s"></div>
+  <div class="hero-sparkle" style="left:72%;top:18%;--dur:4.2s;--delay:0.8s"></div>
+  <div class="hero-sparkle" style="left:84%;top:55%;--dur:3.1s;--delay:1.5s"></div>
+  <div class="hero-sparkle" style="left:8%;top:65%;--dur:5s;--delay:0.3s"></div>
+  <div class="hero-sparkle" style="left:48%;top:12%;--dur:4.6s;--delay:1.1s"></div>
+  <div class="hero-sparkle" style="left:38%;top:78%;--dur:3.8s;--delay:2s"></div>
+  <div class="hero-sparkle" style="left:62%;top:72%;--dur:4.3s;--delay:0.5s"></div>
+
   <div class="hero-content w-full px-6 md:px-20 lg:px-32 py-24">
     <div class="max-w-3xl">
       <p class="section-tag text-gold mb-4 reveal">✦ Since 1995 ✦</p>
-      <h1 class="font-serif text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-tight reveal" style="transition-delay:.1s">
-        Abhushan<br/>
+      <h1 class="font-serif text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light leading-tight reveal" style="transition-delay:.1s">
+        Mahalaxmi<br/>
         <span class="text-gold italic font-semibold">Jewellers</span>
       </h1>
       <div class="ornament max-w-xs my-6 reveal" style="transition-delay:.2s;justify-content:flex-start">
         <div class="ornament-diamond"></div>
         <div style="flex:1;height:1px;background:linear-gradient(90deg,var(--gold),transparent)"></div>
       </div>
-      <p class="font-sans text-gray-200 text-lg md:text-xl font-light tracking-widest uppercase reveal" style="transition-delay:.3s">
+      <p class="font-sans text-gray-200 text-base md:text-xl font-light tracking-widest uppercase reveal" style="transition-delay:.3s">
         Timeless Elegance. Crafted to Shine.
       </p>
       <p class="text-gray-300 font-light mt-4 max-w-lg text-base leading-relaxed reveal" style="transition-delay:.4s">
@@ -122,31 +393,31 @@
   <!-- Scroll cue -->
   <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10">
     <span class="text-white text-xs tracking-widest uppercase font-light opacity-70">Scroll</span>
-    <div style="width:1px;height:40px;background:linear-gradient(to bottom,rgba(255,255,255,0.7),transparent)"></div>
+    <div class="scroll-indicator-line" style="width:1px;height:42px;background:linear-gradient(to bottom,rgba(255,255,255,0.7),transparent)"></div>
   </div>
 </section>
 
 <!-- ╔══════════════════════════════╗ -->
 <!-- ║           ABOUT              ║ -->
 <!-- ╚══════════════════════════════╝ -->
-<section id="about" class="py-24 px-6 md:px-20 bg-cream">
-  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<section id="about" class="py-20 md:py-24 px-6 md:px-20 bg-cream">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center">
     <!-- Image collage -->
-    <div class="relative reveal">
-      <img src="images/bridal_collection.png" alt="Luxury bridal jewelry collection at Abhushan Jewellers" loading="lazy" class="w-full h-80 md:h-[500px] object-cover shadow-2xl"/>
-      <div class="absolute -bottom-6 -right-6 w-44 h-44 md:w-56 md:h-56 border-2 border-gold overflow-hidden shadow-xl hidden md:block">
-        <img src="images/gold_necklace.png" alt="Gold necklace at Abhushan Jewellers" loading="lazy" class="w-full h-full object-cover"/>
+    <div class="relative reveal-left">
+      <img src="images/bridal_collection.png" alt="Luxury bridal jewelry set – Kundan Polki gold collection at Mahalaxmi Jewellers Mumbai" loading="lazy" class="w-full h-72 md:h-[500px] object-cover shadow-2xl"/>
+      <div class="absolute -bottom-6 -right-6 w-36 h-36 md:w-56 md:h-56 border-2 border-gold overflow-hidden shadow-xl hidden md:block">
+        <img src="images/gold_necklace.png" alt="Gold necklace at Mahalaxmi Jewellers" loading="lazy" class="w-full h-full object-cover"/>
       </div>
       <!-- Gold badge -->
-      <div class="absolute top-6 left-6 bg-black bg-opacity-80 border border-gold px-5 py-3 text-center">
-        <span class="text-gold font-serif text-3xl font-bold block">30+</span>
+      <div class="about-badge absolute top-6 left-6 border border-gold px-5 py-3 text-center">
+        <span class="text-white font-serif text-3xl font-bold block count-val" data-target="30" data-suffix="+">30+</span>
         <span class="text-white text-xs tracking-widest uppercase">Years of Trust</span>
       </div>
     </div>
     <!-- Text -->
-    <div class="md:pl-8 reveal" style="transition-delay:.15s">
+    <div class="md:pl-8 reveal-right">
       <p class="section-tag mb-3">Our Story</p>
-      <h2 class="section-title text-4xl md:text-5xl text-black mb-4">Crafting Dreams in<br/><span class="text-gold italic">Gold & Diamonds</span></h2>
+      <h2 class="section-title text-4xl md:text-5xl mb-4" style="color:var(--text-dark)">Crafting Dreams in<br/><span class="text-gold italic">Gold & Diamonds</span></h2>
       <div class="ornament" style="justify-content:flex-start;margin-bottom:1.5rem">
         <div class="ornament-diamond"></div>
         <div style="flex:0 0 80px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)"></div>
@@ -154,25 +425,25 @@
       <div class="quote-line mb-6">
         "Where every jewel carries the soul of Indian craftsmanship."
       </div>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        Established over three decades ago, <strong>Abhushan Jewellers</strong> has been a trusted name for families seeking heirloom-quality jewelry in Mumbai. We blend age-old Indian artisanal traditions with contemporary design sensibilities.
+      <p class="leading-relaxed mb-4" style="color:var(--text-mid)">
+        Established over three decades ago, <strong>Mahalaxmi Jewellers</strong> has been a trusted name for families seeking heirloom-quality jewelry in Mumbai. We blend age-old Indian artisanal traditions with contemporary design sensibilities.
       </p>
-      <p class="text-gray-600 leading-relaxed mb-8">
+      <p class="leading-relaxed mb-8" style="color:var(--text-mid)">
         From intricate <em>Kundan</em> bridal sets to sparkling solitaire diamonds, every piece is curated with uncompromising standards of purity, craftsmanship, and beauty. Our BIS hallmarked gold and certified diamonds ensure complete peace of mind.
       </p>
       <!-- Stats -->
-      <div class="grid grid-cols-3 gap-4 border-t border-gold border-opacity-30 pt-6">
+      <div class="grid grid-cols-3 gap-4 border-t pt-6" style="border-color:rgba(201,162,39,0.3)">
         <div class="text-center">
-          <span class="font-serif text-3xl text-gold font-semibold block">10K+</span>
-          <span class="text-xs text-gray-500 uppercase tracking-wider">Happy Families</span>
+          <span class="font-serif text-3xl text-gold font-semibold block count-val" data-target="10000" data-suffix="K+" data-scale="1000">10K+</span>
+          <span class="text-xs uppercase tracking-wider" style="color:var(--text-muted)">Happy Families</span>
         </div>
-        <div class="text-center border-x border-gold border-opacity-20">
+        <div class="text-center border-x" style="border-color:rgba(201,162,39,0.25)">
           <span class="font-serif text-3xl text-gold font-semibold block">BIS</span>
-          <span class="text-xs text-gray-500 uppercase tracking-wider">Hallmarked Gold</span>
+          <span class="text-xs uppercase tracking-wider" style="color:var(--text-muted)">Hallmarked Gold</span>
         </div>
         <div class="text-center">
-          <span class="font-serif text-3xl text-gold font-semibold block">100%</span>
-          <span class="text-xs text-gray-500 uppercase tracking-wider">Certified Diamonds</span>
+          <span class="font-serif text-3xl text-gold font-semibold block count-val" data-target="100" data-suffix="%">100%</span>
+          <span class="text-xs uppercase tracking-wider" style="color:var(--text-muted)">Certified Diamonds</span>
         </div>
       </div>
     </div>
@@ -182,80 +453,80 @@
 <!-- ╔══════════════════════════════╗ -->
 <!-- ║        COLLECTIONS           ║ -->
 <!-- ╚══════════════════════════════╝ -->
-<section id="collections" class="py-24 px-6 md:px-12 bg-black">
+<section id="collections" class="py-20 md:py-24 px-6 md:px-12 bg-ivory">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16 reveal">
-      <p class="section-tag text-gold mb-3">Explore</p>
-      <h2 class="section-title text-white text-4xl md:text-5xl mb-3">Our Collections</h2>
+    <div class="text-center mb-12 md:mb-16 reveal">
+      <p class="section-tag mb-3">Explore</p>
+      <h2 class="section-title text-4xl md:text-5xl mb-3" style="color:var(--text-dark)">Our Collections</h2>
       <div class="gold-divider"></div>
-      <p class="text-gray-400 mt-4 max-w-xl mx-auto">From age-old traditions to modern masterpieces, discover jewelry for every momentous occasion.</p>
+      <p class="mt-4 max-w-xl mx-auto" style="color:var(--text-muted)">From age-old traditions to modern masterpieces, discover jewelry for every momentous occasion.</p>
     </div>
     <!-- Large featured + grid layout -->
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-      <!-- Card 1 – large (spans 2 cols/rows) -->
-      <div class="collection-card col-span-2 row-span-2 h-80 md:h-[480px] reveal">
+      <!-- Card 1 – large -->
+      <div class="collection-card col-span-2 row-span-2 h-72 md:h-[480px] reveal">
         <img src="images/bridal_collection.png" alt="Bridal jewelry collection" loading="lazy"/>
         <div class="overlay"></div>
         <div class="card-text">
           <p class="font-sans text-gold text-xs tracking-widest uppercase mb-1">Premium</p>
-          <h3 class="font-serif text-white text-3xl font-semibold">Bridal Collection</h3>
+          <h3 class="font-serif text-white text-2xl md:text-3xl font-semibold">Bridal Collection</h3>
           <p class="text-gray-300 text-sm mt-1">Complete bridal sets designed to make every bride unforgettable.</p>
           <div class="card-line"></div>
         </div>
       </div>
       <!-- Card 2 -->
-      <div class="collection-card h-40 md:h-56 reveal" style="transition-delay:.1s">
+      <div class="collection-card h-36 md:h-56 reveal" style="transition-delay:.1s">
         <img src="images/gold_necklace.png" alt="Gold necklace collection" loading="lazy"/>
         <div class="overlay"></div>
         <div class="card-text">
-          <h3 class="font-serif text-white text-xl font-medium">Gold Necklaces</h3>
+          <h3 class="font-serif text-white text-lg md:text-xl font-medium">Gold Necklaces</h3>
           <div class="card-line"></div>
         </div>
       </div>
       <!-- Card 3 -->
-      <div class="collection-card h-40 md:h-56 reveal" style="transition-delay:.2s">
+      <div class="collection-card h-36 md:h-56 reveal" style="transition-delay:.2s">
         <img src="images/gold_bangles.png" alt="Gold bangles collection" loading="lazy"/>
         <div class="overlay"></div>
         <div class="card-text">
-          <h3 class="font-serif text-white text-xl font-medium">Bangles</h3>
+          <h3 class="font-serif text-white text-lg md:text-xl font-medium">Bangles</h3>
           <div class="card-line"></div>
         </div>
       </div>
       <!-- Card 4 -->
-      <div class="collection-card h-40 md:h-56 reveal" style="transition-delay:.3s">
+      <div class="collection-card h-36 md:h-56 reveal" style="transition-delay:.3s">
         <img src="images/diamond_ring.png" alt="Diamond rings collection" loading="lazy"/>
         <div class="overlay"></div>
         <div class="card-text">
-          <h3 class="font-serif text-white text-xl font-medium">Diamond Rings</h3>
+          <h3 class="font-serif text-white text-lg md:text-xl font-medium">Diamond Rings</h3>
           <div class="card-line"></div>
         </div>
       </div>
       <!-- Card 5 -->
-      <div class="collection-card h-40 md:h-56 reveal" style="transition-delay:.4s">
+      <div class="collection-card h-36 md:h-56 reveal" style="transition-delay:.4s">
         <img src="images/diamond_necklace.png" alt="Diamond jewelry collection" loading="lazy"/>
         <div class="overlay"></div>
         <div class="card-text">
-          <h3 class="font-serif text-white text-xl font-medium">Diamond Jewelry</h3>
+          <h3 class="font-serif text-white text-lg md:text-xl font-medium">Diamond Jewelry</h3>
           <div class="card-line"></div>
         </div>
       </div>
     </div>
-    <!-- Bottom row: Silver / Earrings / Rings chips-->
+    <!-- Bottom row -->
     <div class="grid grid-cols-3 gap-3 mt-3">
-      <div class="collection-card h-32 reveal" style="transition-delay:.5s">
+      <div class="collection-card h-28 md:h-32 reveal" style="transition-delay:.5s">
         <img src="https://images.unsplash.com/photo-1602173601602-f9a3d9abb5be?w=600&q=80" alt="Silver jewelry" loading="lazy"/>
         <div class="overlay"></div>
-        <div class="card-text"><h3 class="font-serif text-white text-lg font-medium">Silver Jewelry</h3></div>
+        <div class="card-text"><h3 class="font-serif text-white text-base md:text-lg font-medium">Silver Jewelry</h3></div>
       </div>
-      <div class="collection-card h-32 reveal" style="transition-delay:.6s">
+      <div class="collection-card h-28 md:h-32 reveal" style="transition-delay:.6s">
         <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80" alt="Earrings collection" loading="lazy"/>
         <div class="overlay"></div>
-        <div class="card-text"><h3 class="font-serif text-white text-lg font-medium">Earrings</h3></div>
+        <div class="card-text"><h3 class="font-serif text-white text-base md:text-lg font-medium">Earrings</h3></div>
       </div>
-      <div class="collection-card h-32 reveal" style="transition-delay:.7s">
+      <div class="collection-card h-28 md:h-32 reveal" style="transition-delay:.7s">
         <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80" alt="Rings collection" loading="lazy"/>
         <div class="overlay"></div>
-        <div class="card-text"><h3 class="font-serif text-white text-lg font-medium">Rings</h3></div>
+        <div class="card-text"><h3 class="font-serif text-white text-base md:text-lg font-medium">Rings</h3></div>
       </div>
     </div>
   </div>
@@ -264,92 +535,92 @@
 <!-- ╔══════════════════════════════╗ -->
 <!-- ║      FEATURED JEWELRY        ║ -->
 <!-- ╚══════════════════════════════╝ -->
-<section id="featured" class="py-24 px-6 md:px-12 bg-cream">
+<section id="featured" class="py-20 md:py-24 px-6 md:px-12 bg-cream">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16 reveal">
+    <div class="text-center mb-12 md:mb-16 reveal">
       <p class="section-tag mb-3">Handpicked</p>
-      <h2 class="section-title text-black text-4xl md:text-5xl mb-3">Featured Pieces</h2>
+      <h2 class="section-title text-4xl md:text-5xl mb-3" style="color:var(--text-dark)">Featured Pieces</h2>
       <div class="gold-divider"></div>
-      <p class="text-gray-500 mt-4 max-w-xl mx-auto">Each piece crafted with unparalleled attention to detail and the finest materials.</p>
+      <p class="mt-4 max-w-xl mx-auto" style="color:var(--text-muted)">Each piece crafted with unparalleled attention to detail and the finest materials.</p>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
       <!-- Product 1 -->
       <div class="product-card reveal">
-        <div class="img-wrap h-56"><img src="images/gold_necklace.png" alt="Temple Gold Necklace" loading="lazy" class="w-full h-full object-cover"/></div>
-        <div class="p-4">
+        <div class="img-wrap h-44 md:h-56"><img src="images/gold_necklace.png" alt="Temple Gold Necklace" loading="lazy" class="w-full h-full object-cover"/></div>
+        <div class="p-3 md:p-4">
           <p class="text-xs text-gold uppercase tracking-widest font-medium mb-1">Gold Jewelry</p>
-          <h3 class="font-serif text-black text-lg font-semibold leading-tight">Temple Gold Necklace</h3>
-          <p class="text-gray-500 text-xs mt-1 mb-3">22K Yellow Gold · Handcrafted</p>
+          <h3 class="font-serif text-base md:text-lg font-semibold leading-tight" style="color:var(--text-dark)">Temple Gold Necklace</h3>
+          <p class="text-xs mt-1 mb-3" style="color:var(--text-muted)">22K Yellow Gold · Handcrafted</p>
           <button data-wa class="w-full btn-gold text-xs py-2.5"><span>Enquire on WhatsApp</span></button>
         </div>
       </div>
       <!-- Product 2 -->
       <div class="product-card reveal" style="transition-delay:.1s">
-        <div class="img-wrap h-56"><img src="images/diamond_ring.png" alt="Solitaire Diamond Ring" loading="lazy" class="w-full h-full object-cover"/></div>
-        <div class="p-4">
+        <div class="img-wrap h-44 md:h-56"><img src="images/diamond_ring.png" alt="Solitaire Diamond Ring" loading="lazy" class="w-full h-full object-cover"/></div>
+        <div class="p-3 md:p-4">
           <p class="text-xs text-gold uppercase tracking-widest font-medium mb-1">Diamond Jewelry</p>
-          <h3 class="font-serif text-black text-lg font-semibold leading-tight">Solitaire Diamond Ring</h3>
-          <p class="text-gray-500 text-xs mt-1 mb-3">18K White Gold · GIA Certified</p>
+          <h3 class="font-serif text-base md:text-lg font-semibold leading-tight" style="color:var(--text-dark)">Solitaire Diamond Ring</h3>
+          <p class="text-xs mt-1 mb-3" style="color:var(--text-muted)">18K White Gold · GIA Certified</p>
           <button data-wa class="w-full btn-gold text-xs py-2.5"><span>Enquire on WhatsApp</span></button>
         </div>
       </div>
       <!-- Product 3 -->
       <div class="product-card reveal" style="transition-delay:.2s">
-        <div class="img-wrap h-56"><img src="images/bridal_collection.png" alt="Royal Bridal Set" loading="lazy" class="w-full h-full object-cover"/></div>
-        <div class="p-4">
+        <div class="img-wrap h-44 md:h-56"><img src="images/bridal_collection.png" alt="Royal Bridal Set" loading="lazy" class="w-full h-full object-cover"/></div>
+        <div class="p-3 md:p-4">
           <p class="text-xs text-gold uppercase tracking-widest font-medium mb-1">Bridal Collection</p>
-          <h3 class="font-serif text-black text-lg font-semibold leading-tight">Royal Bridal Set</h3>
-          <p class="text-gray-500 text-xs mt-1 mb-3">22K Gold · Kundan & Polki</p>
+          <h3 class="font-serif text-base md:text-lg font-semibold leading-tight" style="color:var(--text-dark)">Royal Bridal Set</h3>
+          <p class="text-xs mt-1 mb-3" style="color:var(--text-muted)">22K Gold · Kundan & Polki</p>
           <button data-wa class="w-full btn-gold text-xs py-2.5"><span>Enquire on WhatsApp</span></button>
         </div>
       </div>
       <!-- Product 4 -->
       <div class="product-card reveal" style="transition-delay:.3s">
-        <div class="img-wrap h-56"><img src="images/gold_bangles.png" alt="Meenakari Gold Bangles" loading="lazy" class="w-full h-full object-cover"/></div>
-        <div class="p-4">
+        <div class="img-wrap h-44 md:h-56"><img src="images/gold_bangles.png" alt="Meenakari Gold Bangles" loading="lazy" class="w-full h-full object-cover"/></div>
+        <div class="p-3 md:p-4">
           <p class="text-xs text-gold uppercase tracking-widest font-medium mb-1">Bangles</p>
-          <h3 class="font-serif text-black text-lg font-semibold leading-tight">Meenakari Gold Bangles</h3>
-          <p class="text-gray-500 text-xs mt-1 mb-3">22K Gold · Set of 6</p>
+          <h3 class="font-serif text-base md:text-lg font-semibold leading-tight" style="color:var(--text-dark)">Meenakari Gold Bangles</h3>
+          <p class="text-xs mt-1 mb-3" style="color:var(--text-muted)">22K Gold · Set of 6</p>
           <button data-wa class="w-full btn-gold text-xs py-2.5"><span>Enquire on WhatsApp</span></button>
         </div>
       </div>
       <!-- Product 5 -->
       <div class="product-card reveal">
-        <div class="img-wrap h-56"><img src="images/diamond_necklace.png" alt="Diamond Statement Necklace" loading="lazy" class="w-full h-full object-cover"/></div>
-        <div class="p-4">
+        <div class="img-wrap h-44 md:h-56"><img src="images/diamond_necklace.png" alt="Diamond Statement Necklace" loading="lazy" class="w-full h-full object-cover"/></div>
+        <div class="p-3 md:p-4">
           <p class="text-xs text-gold uppercase tracking-widest font-medium mb-1">Diamond Jewelry</p>
-          <h3 class="font-serif text-black text-lg font-semibold leading-tight">Diamond Statement Necklace</h3>
-          <p class="text-gray-500 text-xs mt-1 mb-3">18K White Gold · VS Clarity</p>
+          <h3 class="font-serif text-base md:text-lg font-semibold leading-tight" style="color:var(--text-dark)">Diamond Statement Necklace</h3>
+          <p class="text-xs mt-1 mb-3" style="color:var(--text-muted)">18K White Gold · VS Clarity</p>
           <button data-wa class="w-full btn-gold text-xs py-2.5"><span>Enquire on WhatsApp</span></button>
         </div>
       </div>
       <!-- Product 6 -->
       <div class="product-card reveal" style="transition-delay:.1s">
-        <div class="img-wrap h-56"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80" alt="Jhumka Earrings" loading="lazy" class="w-full h-full object-cover"/></div>
-        <div class="p-4">
+        <div class="img-wrap h-44 md:h-56"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80" alt="Jhumka Earrings" loading="lazy" class="w-full h-full object-cover"/></div>
+        <div class="p-3 md:p-4">
           <p class="text-xs text-gold uppercase tracking-widest font-medium mb-1">Earrings</p>
-          <h3 class="font-serif text-black text-lg font-semibold leading-tight">Gold Jhumka Earrings</h3>
-          <p class="text-gray-500 text-xs mt-1 mb-3">22K Gold · Pearl Drops</p>
+          <h3 class="font-serif text-base md:text-lg font-semibold leading-tight" style="color:var(--text-dark)">Gold Jhumka Earrings</h3>
+          <p class="text-xs mt-1 mb-3" style="color:var(--text-muted)">22K Gold · Pearl Drops</p>
           <button data-wa class="w-full btn-gold text-xs py-2.5"><span>Enquire on WhatsApp</span></button>
         </div>
       </div>
       <!-- Product 7 -->
       <div class="product-card reveal" style="transition-delay:.2s">
-        <div class="img-wrap h-56"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80" alt="Diamond Eternity Ring" loading="lazy" class="w-full h-full object-cover"/></div>
-        <div class="p-4">
+        <div class="img-wrap h-44 md:h-56"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80" alt="Diamond Eternity Ring" loading="lazy" class="w-full h-full object-cover"/></div>
+        <div class="p-3 md:p-4">
           <p class="text-xs text-gold uppercase tracking-widest font-medium mb-1">Rings</p>
-          <h3 class="font-serif text-black text-lg font-semibold leading-tight">Diamond Eternity Band</h3>
-          <p class="text-gray-500 text-xs mt-1 mb-3">18K Rose Gold · Full Eternity</p>
+          <h3 class="font-serif text-base md:text-lg font-semibold leading-tight" style="color:var(--text-dark)">Diamond Eternity Band</h3>
+          <p class="text-xs mt-1 mb-3" style="color:var(--text-muted)">18K Rose Gold · Full Eternity</p>
           <button data-wa class="w-full btn-gold text-xs py-2.5"><span>Enquire on WhatsApp</span></button>
         </div>
       </div>
       <!-- Product 8 -->
       <div class="product-card reveal" style="transition-delay:.3s">
-        <div class="img-wrap h-56"><img src="https://images.unsplash.com/photo-1602173601602-f9a3d9abb5be?w=600&q=80" alt="Silver Antique Necklace" loading="lazy" class="w-full h-full object-cover"/></div>
-        <div class="p-4">
+        <div class="img-wrap h-44 md:h-56"><img src="https://images.unsplash.com/photo-1602173601602-f9a3d9abb5be?w=600&q=80" alt="Silver Antique Necklace" loading="lazy" class="w-full h-full object-cover"/></div>
+        <div class="p-3 md:p-4">
           <p class="text-xs text-gold uppercase tracking-widest font-medium mb-1">Silver Jewelry</p>
-          <h3 class="font-serif text-black text-lg font-semibold leading-tight">Antique Silver Necklace</h3>
-          <p class="text-gray-500 text-xs mt-1 mb-3">925 Sterling Silver · Oxidised</p>
+          <h3 class="font-serif text-base md:text-lg font-semibold leading-tight" style="color:var(--text-dark)">Antique Silver Necklace</h3>
+          <p class="text-xs mt-1 mb-3" style="color:var(--text-muted)">925 Sterling Silver · Oxidised</p>
           <button data-wa class="w-full btn-gold text-xs py-2.5"><span>Enquire on WhatsApp</span></button>
         </div>
       </div>
@@ -360,13 +631,13 @@
 <!-- ╔══════════════════════════════╗ -->
 <!-- ║          GALLERY             ║ -->
 <!-- ╚══════════════════════════════╝ -->
-<section id="gallery" class="py-24 px-6 md:px-12 bg-black">
+<section id="gallery" class="py-20 md:py-24 px-6 md:px-12 bg-parchment">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16 reveal">
-      <p class="section-tag text-gold mb-3">Visual Journey</p>
-      <h2 class="section-title text-white text-4xl md:text-5xl mb-3">Jewelry Gallery</h2>
+    <div class="text-center mb-12 md:mb-16 reveal">
+      <p class="section-tag mb-3">Visual Journey</p>
+      <h2 class="section-title text-4xl md:text-5xl mb-3" style="color:var(--text-dark)">Jewelry Gallery</h2>
       <div class="gold-divider"></div>
-      <p class="text-gray-400 mt-4 max-w-xl mx-auto">Every photograph captures the brilliance, artistry, and soul of our collections.</p>
+      <p class="mt-4 max-w-xl mx-auto" style="color:var(--text-muted)">Every photograph captures the brilliance, artistry, and soul of our collections.</p>
     </div>
     <div class="gallery-grid">
       <div class="gallery-item reveal">
@@ -412,48 +683,48 @@
 <!-- ╔══════════════════════════════╗ -->
 <!-- ║        VISIT STORE           ║ -->
 <!-- ╚══════════════════════════════╝ -->
-<section id="store" class="py-24 px-6 md:px-12 bg-cream">
+<section id="store" class="py-20 md:py-24 px-6 md:px-12 bg-cream">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16 reveal">
+    <div class="text-center mb-12 md:mb-16 reveal">
       <p class="section-tag mb-3">Find Us</p>
-      <h2 class="section-title text-black text-4xl md:text-5xl mb-3">Visit Our Showroom</h2>
+      <h2 class="section-title text-4xl md:text-5xl mb-3" style="color:var(--text-dark)">Visit Our Showroom</h2>
       <div class="gold-divider"></div>
-      <p class="text-gray-500 mt-4 max-w-xl mx-auto">Experience our jewelry in person. Our experts are here to help you find your perfect piece.</p>
+      <p class="mt-4 max-w-xl mx-auto" style="color:var(--text-muted)">Experience our jewelry in person. Our experts are here to help you find your perfect piece.</p>
     </div>
-    <div class="grid md:grid-cols-2 gap-10 items-center">
+    <div class="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
       <!-- Map -->
-      <div class="map-wrapper shadow-2xl reveal">
+      <div class="map-wrapper shadow-2xl reveal-left">
         <iframe
-          src="https://maps.google.com/maps?q=Abhushan+Jewellers+Malad+Mumbai&output=embed&z=16"
+          src="https://maps.google.com/maps?q=Mahalaxmi+Jewellers+Malad+Mumbai&output=embed&z=16"
           width="100%"
-          height="400"
+          height="380"
           style="border:0;display:block"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          title="Abhushan Jewellers location on Google Maps"
+          title="Mahalaxmi Jewellers location on Google Maps"
         ></iframe>
       </div>
       <!-- Store Info -->
-      <div class="reveal" style="transition-delay:.15s">
+      <div class="reveal-right">
         <div class="flex items-start gap-4 mb-6">
           <div class="contact-icon-box mt-1">
-            <svg class="w-6 h-6 text-black" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           </div>
           <div>
-            <h3 class="font-serif text-xl font-semibold text-black mb-1">Abhushan Jewellers</h3>
-            <p class="text-gray-600 leading-relaxed">Malad West, Mumbai,<br/>Maharashtra – 400064<br/>India</p>
+            <h3 class="font-serif text-xl font-semibold mb-1" style="color:var(--text-dark)">Mahalaxmi Jewellers</h3>
+            <p class="leading-relaxed" style="color:var(--text-mid)">Malad West, Mumbai,<br/>Maharashtra – 400064<br/>India</p>
             <a href="https://share.google/2djDuenlVVsBcjqH2" target="_blank" rel="noopener noreferrer" class="inline-block mt-2 text-gold text-sm hover:underline">View on Google Maps →</a>
           </div>
         </div>
         <div class="flex items-start gap-4 mb-6">
           <div class="contact-icon-box mt-1">
-            <svg class="w-6 h-6 text-black" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
           </div>
           <div>
-            <h3 class="font-serif text-xl font-semibold text-black mb-1">Phone</h3>
-            <p class="text-gray-600">+91 95100 36176</p>
-            <p class="text-gray-500 text-sm">Mon–Sun: 10 AM – 9 PM</p>
+            <h3 class="font-serif text-xl font-semibold mb-1" style="color:var(--text-dark)">Phone</h3>
+            <p style="color:var(--text-mid)">+91 95100 36176</p>
+            <p class="text-sm" style="color:var(--text-muted)">Mon–Sun: 10 AM – 9 PM</p>
           </div>
         </div>
         <div class="flex gap-4 flex-wrap mt-8">
@@ -468,43 +739,43 @@
 <!-- ╔══════════════════════════════╗ -->
 <!-- ║          CONTACT             ║ -->
 <!-- ╚══════════════════════════════╝ -->
-<section id="contact" class="py-24 px-6 md:px-12 bg-black">
+<section id="contact" class="py-20 md:py-24 px-6 md:px-12 bg-ivory">
   <div class="max-w-5xl mx-auto text-center">
-    <p class="section-tag text-gold mb-3 reveal">Get in Touch</p>
-    <h2 class="section-title text-white text-4xl md:text-5xl mb-3 reveal" style="transition-delay:.1s">We'd Love to Hear From You</h2>
+    <p class="section-tag mb-3 reveal">Get in Touch</p>
+    <h2 class="section-title text-4xl md:text-5xl mb-3 reveal" style="color:var(--text-dark);transition-delay:.1s">We'd Love to Hear From You</h2>
     <div class="gold-divider reveal" style="transition-delay:.2s"></div>
-    <p class="text-gray-400 mt-4 mb-14 max-w-xl mx-auto reveal" style="transition-delay:.3s">Whether you're looking for a bridal set, a solitaire ring, or a custom piece — our experts are just a call away.</p>
-    <div class="grid md:grid-cols-3 gap-6 mb-14">
+    <p class="mt-4 mb-12 md:mb-14 max-w-xl mx-auto reveal" style="color:var(--text-muted);transition-delay:.3s">Whether you're looking for a bridal set, a solitaire ring, or a custom piece — our experts are just a call away.</p>
+    <div class="grid md:grid-cols-3 gap-5 md:gap-6 mb-12 md:mb-14">
       <!-- Address -->
-      <div class="bg-white bg-opacity-5 border border-gold border-opacity-20 p-8 reveal" style="transition-delay:.1s">
-        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center border border-gold">
-          <svg class="w-6 h-6 text-gold" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      <div class="contact-card p-6 md:p-8 reveal" style="transition-delay:.1s">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center" style="background:linear-gradient(135deg,var(--gold-dark),var(--gold))">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
         </div>
         <h3 class="font-serif text-gold text-xl mb-2">Address</h3>
-        <p class="text-gray-400 text-sm leading-relaxed">Malad West, Mumbai<br/>Maharashtra – 400064</p>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Malad West, Mumbai<br/>Maharashtra – 400064</p>
       </div>
       <!-- Phone -->
-      <div class="bg-white bg-opacity-5 border border-gold border-opacity-20 p-8 reveal" style="transition-delay:.2s">
-        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center border border-gold">
-          <svg class="w-6 h-6 text-gold" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <div class="contact-card p-6 md:p-8 reveal" style="transition-delay:.2s">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center" style="background:linear-gradient(135deg,var(--gold-dark),var(--gold))">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
         </div>
         <h3 class="font-serif text-gold text-xl mb-2">Phone</h3>
-        <p class="text-gray-400 text-sm">+91 95100 36176</p>
+        <p class="text-sm" style="color:var(--text-muted)">+91 95100 36176</p>
       </div>
       <!-- Email -->
-      <div class="bg-white bg-opacity-5 border border-gold border-opacity-20 p-8 reveal" style="transition-delay:.3s">
-        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center border border-gold">
-          <svg class="w-6 h-6 text-gold" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      <div class="contact-card p-6 md:p-8 reveal" style="transition-delay:.3s">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center" style="background:linear-gradient(135deg,var(--gold-dark),var(--gold))">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
         </div>
         <h3 class="font-serif text-gold text-xl mb-2">Email</h3>
-        <p class="text-gray-400 text-sm">info@abhushanjewellers.com</p>
+        <p class="text-sm" style="color:var(--text-muted)">info@mahalaxmijewellers.com</p>
       </div>
     </div>
     <!-- CTA buttons -->
     <div class="flex flex-wrap gap-4 justify-center reveal" style="transition-delay:.4s">
       <a href="tel:+919510036176" class="btn-gold"><span>📞 Call Now</span></a>
-      <button data-wa class="btn-outline-gold text-gold">💬 WhatsApp Chat</button>
-      <a href="https://share.google/2djDuenlVVsBcjqH2" target="_blank" rel="noopener noreferrer" class="btn-outline-gold text-gold">📍 Get Directions</a>
+      <button data-wa class="btn-outline-gold">💬 WhatsApp Chat</button>
+      <a href="https://share.google/2djDuenlVVsBcjqH2" target="_blank" rel="noopener noreferrer" class="btn-outline-gold">📍 Get Directions</a>
     </div>
   </div>
 </section>
@@ -512,24 +783,24 @@
 <!-- ╔══════════════════════════════╗ -->
 <!-- ║           FOOTER             ║ -->
 <!-- ╚══════════════════════════════╝ -->
-<footer class="bg-black border-t border-gold border-opacity-20 pt-16 pb-8 px-6 md:px-12">
+<footer class="bg-parchment border-t-2 border-gold pt-14 pb-8 px-6 md:px-12" style="border-color:rgba(201,162,39,0.4)">
   <div class="max-w-7xl mx-auto">
-    <div class="grid md:grid-cols-4 gap-12 mb-12">
+    <div class="grid md:grid-cols-4 gap-10 md:gap-12 mb-12">
       <!-- Brand -->
       <div class="md:col-span-1">
-        <h2 class="font-serif text-gold text-3xl font-semibold mb-1">Abhushan</h2>
-        <p class="text-white text-xs tracking-[0.35em] uppercase font-light mb-4">Jewellers</p>
-        <div class="h-px bg-gold bg-opacity-30 mb-4"></div>
-        <p class="text-gray-400 text-sm leading-relaxed">Crafting timeless jewelry since 1995. Your trusted jeweller for gold, diamond, and bridal collections in Mumbai.</p>
+        <h2 class="font-serif text-gold text-3xl font-semibold mb-1">Mahalaxmi</h2>
+        <p class="text-xs tracking-[0.35em] uppercase font-light mb-4" style="color:var(--text-mid)">Jewellers</p>
+        <div class="h-px mb-4" style="background:rgba(201,162,39,0.35)"></div>
+        <p class="text-sm leading-relaxed" style="color:var(--text-muted)">Crafting timeless jewelry since 1995. Your trusted jeweller for gold, diamond, and bridal collections in Mumbai.</p>
         <!-- Social -->
         <div class="flex gap-4 mt-6">
-          <a href="#" aria-label="Facebook" class="w-9 h-9 border border-gold border-opacity-40 flex items-center justify-center text-gold hover:bg-gold hover:text-black transition-colors">
+          <a href="#" aria-label="Facebook" class="w-9 h-9 border flex items-center justify-center text-gold hover:bg-gold hover:text-white transition-colors" style="border-color:rgba(201,162,39,0.5)">
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
-          <a href="#" aria-label="Instagram" class="w-9 h-9 border border-gold border-opacity-40 flex items-center justify-center text-gold hover:bg-gold hover:text-black transition-colors">
+          <a href="#" aria-label="Instagram" class="w-9 h-9 border flex items-center justify-center text-gold hover:bg-gold hover:text-white transition-colors" style="border-color:rgba(201,162,39,0.5)">
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
           </a>
-          <a href="#" aria-label="YouTube" class="w-9 h-9 border border-gold border-opacity-40 flex items-center justify-center text-gold hover:bg-gold hover:text-black transition-colors">
+          <a href="#" aria-label="YouTube" class="w-9 h-9 border flex items-center justify-center text-gold hover:bg-gold hover:text-white transition-colors" style="border-color:rgba(201,162,39,0.5)">
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           </a>
         </div>
@@ -538,12 +809,12 @@
       <div>
         <h4 class="font-serif text-gold text-lg mb-5">Quick Links</h4>
         <ul class="space-y-3">
-          <li><a href="#home" class="footer-link">Home</a></li>
-          <li><a href="#about" class="footer-link">About Us</a></li>
+          <li><a href="#home"        class="footer-link">Home</a></li>
+          <li><a href="#about"       class="footer-link">About Us</a></li>
           <li><a href="#collections" class="footer-link">Collections</a></li>
-          <li><a href="#gallery" class="footer-link">Gallery</a></li>
-          <li><a href="#store" class="footer-link">Visit Store</a></li>
-          <li><a href="#contact" class="footer-link">Contact</a></li>
+          <li><a href="#gallery"     class="footer-link">Gallery</a></li>
+          <li><a href="#store"       class="footer-link">Visit Store</a></li>
+          <li><a href="#contact"     class="footer-link">Contact</a></li>
         </ul>
       </div>
       <!-- Collections -->
@@ -561,25 +832,35 @@
       <!-- Info -->
       <div>
         <h4 class="font-serif text-gold text-lg mb-5">Store Hours</h4>
-        <ul class="space-y-2 text-gray-400 text-sm">
+        <ul class="space-y-2 text-sm" style="color:var(--text-muted)">
           <li>Monday – Saturday</li>
-          <li class="text-white">10:00 AM – 9:00 PM</li>
+          <li style="color:var(--text-dark);font-weight:500">10:00 AM – 9:00 PM</li>
           <li class="mt-2">Sunday</li>
-          <li class="text-white">11:00 AM – 8:00 PM</li>
+          <li style="color:var(--text-dark);font-weight:500">11:00 AM – 8:00 PM</li>
         </ul>
-        <div class="mt-6 p-4 border border-gold border-opacity-20 bg-white bg-opacity-5">
+        <div class="mt-6 p-4 border" style="border-color:rgba(201,162,39,0.3);background:rgba(201,162,39,0.06)">
           <p class="text-gold text-xs uppercase tracking-widest mb-1">Certifications</p>
-          <p class="text-gray-400 text-xs leading-relaxed">BIS Hallmarked Gold · IGI / GIA Certified Diamonds</p>
+          <p class="text-xs leading-relaxed" style="color:var(--text-muted)">BIS Hallmarked Gold · IGI / GIA Certified Diamonds</p>
         </div>
       </div>
     </div>
+    <!-- Microdata address block (visible to crawlers, styled subtle) -->
+    <address class="not-italic text-center text-xs mb-6" style="color:var(--text-muted)" itemscope itemtype="https://schema.org/JewelryStore">
+      <span itemprop="name">Mahalaxmi Jewellers</span> ·
+      <span itemprop="streetAddress">Malad West</span>,
+      <span itemprop="addressLocality">Mumbai</span>,
+      <span itemprop="addressRegion">Maharashtra</span> –
+      <span itemprop="postalCode">400064</span> ·
+      <a href="tel:+919510036176" itemprop="telephone" class="text-gold hover:underline">+91 95100 36176</a>
+    </address>
+
     <!-- Bottom bar -->
-    <div class="border-t border-gold border-opacity-20 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
-      <p class="text-gray-500 text-xs">© 2025 Abhushan Jewellers. All rights reserved.</p>
+    <div class="border-t pt-6 flex flex-col md:flex-row items-center justify-between gap-3" style="border-color:rgba(201,162,39,0.3)">
+      <p class="text-xs" style="color:var(--text-muted)">© 2025 Mahalaxmi Jewellers. All rights reserved.</p>
       <div class="ornament" style="flex:1;margin:0 2rem">
         <div class="ornament-diamond" style="width:5px;height:5px"></div>
       </div>
-      <p class="text-gray-600 text-xs">Crafted with <span class="text-gold">♥</span> in Mumbai, India</p>
+      <p class="text-xs" style="color:var(--text-muted)">Crafted with <span class="text-gold">♥</span> in Mumbai, India</p>
     </div>
   </div>
 </footer>
